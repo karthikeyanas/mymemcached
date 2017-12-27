@@ -1,0 +1,6 @@
+#!/bin/bash
+
+touch memcached.log
+./mymemcached >& memcached.log &
+tail -f memcached.log
+
